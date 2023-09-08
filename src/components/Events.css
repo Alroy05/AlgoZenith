@@ -1,0 +1,27 @@
+
+
+.events-container {
+  background-color: #ddfcf9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 10px 0px 10px 0px #89d5ce;
+}
+
+.events-title  {
+  color: #088FFA;
+  font-size: 2.1em;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.events-des  {
+  color: grey;
+  font-size: 1.5rem;
+  display: flex;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px 10px;
+}

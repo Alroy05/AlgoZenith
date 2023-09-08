@@ -11,6 +11,7 @@ export default function Home() {
           <p><span className='highlighted'>AlgoZenith</span>,</p>
           <p>An <strong>Algorithm</strong> to become</p>
           <p><span className='highlighted'>Awesome</span> at <span className='highlighted'>DSA</span> and <span className='highlighted'>CP</span></p>
+          <button className='register'>Know More</button>
           <button className='register'>Register</button>
         </span>
         </div>
