@@ -13,6 +13,7 @@ import Register from './components/Register';
 import NewEvents from './components/NewEvents';
 import BackBtn from './components/BackBtn';
 import ScrollToTop from './components/ScrollToTop';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Home />
             <Objective />
             <Events />
+            <Contact />
           </>
         }/>
         <Route exact path='/register' element={

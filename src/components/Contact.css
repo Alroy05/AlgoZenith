@@ -1,0 +1,122 @@
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.input-field {
+  border: none;
+  border-radius: 5px;
+  color: #088FFA;
+  background-color: #e7effc;
+  box-shadow: 0px 8px 15px rgba(132, 237, 255, 0.2);
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.input-field::placeholder {
+  color: #088FFA;
+}
+
+.inline-fields {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* form {
+  background-color: #d3e4fe;
+  padding: 20px;
+  border-radius: 5px;
+} */
+
+.inline-fields input {
+  flex: 1;
+  max-width: calc(50% - 5px);
+}
+
+@media screen and (max-width: 950px) {
+  .inline-fields {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .inline-fields input {
+    flex: none;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-details {
+    color: darkblue;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.submit-button {
+  background-color: #088FFA;
+  color: #e7effc;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  box-shadow: 0px 8px 15px rgba(141, 238, 255, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-button:hover {
+  transform: translateY(-3px);
+  transition: 0.4s ease;
+  background-color: #d3e4fe;
+  color: #2295f4;
+}
+
+.contact-details {
+  display: flex;
+  color: darkblue;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 50%;
+  margin: 10px auto;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: baseline;
+}
+
+.contact-detail.left {
+  flex: 1;
+}
+
+.contact-detail.right {
+  flex: 1;
+  margin-right: 0%;
+}
+
+.contact-detail span {
+  font-weight: bold;
+  margin-right: 5px;
+}
