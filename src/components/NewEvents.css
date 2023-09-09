@@ -1,6 +1,6 @@
 
 .wrap-register {
-  margin-top: 20px;
+  /* margin-top: 100px; */
   padding: 10px 0px;
   /* background-color: #caf3ff; */
   width: 100%;
@@ -59,6 +59,7 @@
 }
 
 .register-div ul li {
+  color: darkblue;
   margin: 5px;
 }
 

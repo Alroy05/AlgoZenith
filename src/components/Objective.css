@@ -23,14 +23,14 @@
   flex: 1;
   min-width: 300px;
   max-width: 400px; 
-  background-color: #d0e1fb;
+  background-color: white;
   border: 1px solid #e1e1e1;
   border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.2s;
   overflow: hidden;
   color: rgb(41,83,155);
-  text-align: center;
+  text-align: start;
   margin: 10px;
   padding: 10px 20px;
 }
@@ -77,7 +77,7 @@
     flex: 1;
     min-width: 300px;
     max-width: 400px; 
-    background-color: #d0e1fb;
+    background-color: white;
     border: 1px solid #e1e1e1;
     border-radius: 10px;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -85,11 +85,12 @@
     color: black;
     text-align: center;
     margin: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   }
   
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 15px rgb(130, 172, 235);
   }
   
   .card h2 {

@@ -1,7 +1,8 @@
 
 
 .events-container {
-  background-color: #ddfcf9;
+  /* background-color: #ddfcf9; */
+  background-color: white;
   width: 100%;
   display: flex;
   align-items: center;

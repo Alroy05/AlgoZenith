@@ -1,7 +1,8 @@
 .wrap-card {
   margin: 40px;
   /* padding: 25px 0px; */
-  background-color: #ffe7e9;
+  /* background-color: #ffe7e9; */
+  background-color: rgb(224 242 254);
   width: 30vw;
   height: 180px;
   display: flex;
@@ -9,14 +10,14 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   border-radius: 10px;
-  box-shadow: 0px 8px 15px rgba(255, 141, 141, 0.2);
+  box-shadow: 0px 8px 15px rgba(141, 249, 255, 0.2);
   transition: transform 0.2s, box-shadow 0.2s;
   /* box-shadow: 3px 5px #fd5340; */
 }
 
 .wrap-card:hover {
   transform: translateY(-5px);
-  box-shadow: 3px 5px #fd5340;
+  box-shadow: 0px 8px 15px rgb(186 230 253);
 }
 
 .card-image-container {

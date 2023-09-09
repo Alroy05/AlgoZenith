@@ -1,11 +1,12 @@
-import React from 'react'
+import { React } from 'react'
 import Poster from '../assets/mememania.png'; 
 import './NewEvents.css';
+import { Link } from 'react-router-dom';
 
-export default function newEvents() {
+export default function newEvents(props) { 
   return (
     <>
-      <div className='wrap-register'>
+      <div className='wrap-register' style={{'marginTop':props.margin}}>
         <div className='poster-container'>
           <img src={Poster} alt="Event-Poster" className='event-poster'/>
         </div>
@@ -16,7 +17,9 @@ export default function newEvents() {
             <li>Timing: 10:00</li>
             <li>Venue: Samvad</li>
           </ul>
-          <button className='register-btn'>Register</button>
+          <Link to='/register'>
+            <button className='register-btn' style={{'display':props.display}}>Register</button>
+          </Link>
         </div>
       </div>
     </>
