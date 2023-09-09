@@ -1,6 +1,7 @@
 import React from "react";
-import blueLogo from '../assets/blueLogo.svg'
+import blueLogo from '../assets/blueLogo.svg';
 import "./Navbar.css";
+
 
 function Navbar() {
   return (

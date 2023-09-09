@@ -1,7 +1,7 @@
 
 .wrap-register {
-  margin-top: 40px;
-  padding: 25px 0px;
+  margin-top: 20px;
+  padding: 10px 0px;
   /* background-color: #caf3ff; */
   width: 100%;
   display: flex;
@@ -39,13 +39,16 @@
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.8px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .register-btn:hover {
-  transition: 0.7s ease;
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px #5bd9ff;
   color: white;
   background-color: #2295f4;
-  box-shadow: 3px 5px #5bd9ff;
+  /* box-shadow: 3px 5px #5bd9ff; */
 }
 
 .register-div {
@@ -61,8 +64,8 @@
 
 .event-name {
   color: #088FFA;
-  font-weight: bold;
-  font-size: 2.1rem;
+  /* font-weight: bold; */
+  font-size: 1.9rem;
   margin: 0;
 }
 
