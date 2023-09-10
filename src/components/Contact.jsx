@@ -15,11 +15,11 @@ function ContactForm() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here (e.g., send data to a server)
-    console.log(formData);
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle form submission here (e.g., send data to a server)
+  //   console.log(formData);
+  // };
 
   return (
     <div className="contact-form-container" id='contact'>
@@ -34,7 +34,7 @@ function ContactForm() {
           <span>crce.algozenith@gmail.com</span>
         </div>
       </div>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form" action="https://formsubmit.co/crce.algozenith@gmail.com" method="POST">
         <input
           type="text"
           name="name"

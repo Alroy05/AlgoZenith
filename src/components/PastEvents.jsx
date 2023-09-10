@@ -8,30 +8,21 @@ import Fade from 'react-reveal/Fade';
 let eventNames = [
 {
   "name": "MEMEMANIA",
-  "description": "loremshkdbcsdjcskdbjsjdb"
-},
-{
-  "name": "blah",
-  "description": "loremshkdbcsdjcskdbjsjdb"
-},
-{
-  "name": "i dont konw what",
-  "description": "loremshkdbcsdjcskdbjsjdb"
-},
-{
-  "name": "do what u liek",
-  "description": "loremshkdbcsdjcskdbjsjdb"
-}]
+  "description": "Where coding and programming enthusiasts unleash their humor and creativity."
+}
+]
 
 export default function PastEvents() {
   return (
     <div className='past-event-container'>
       <Fade bottom>
-      {eventNames.map((event) => {
-                            return <EventCard image={poster} name={event.name} Description={event.description}/>
-                        }
-                      )
-      }
+      <>
+        {eventNames.map((event) => {
+                              return <EventCard image={poster} name={event.name} Description={event.description}/>
+                          }
+                        )
+        }
+      </>
       </Fade>
     </div>
   )

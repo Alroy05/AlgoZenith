@@ -5,19 +5,19 @@ import Fade from 'react-reveal/Fade';
 const ObjectiveComponent = () => {
   const objectives = [
     {
-      title: 'Objective 1',
+      title: 'Synergistic Collaboration',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, consequatur sunt laboriosam voluptatibus est id officia molestiae quibusdam modi ducimus, quos iure eos, assumenda libero saepe placeat amet eaque enim mollitia corrupti porro quas!',
+        'Algozenith fosters interdisciplinary collaboration, uniting individuals from various domains to collectively share and generate innovative ideas, catalyzing progress and solutions across diverse fields.',
     },
     {
-      title: 'Objective 2',
+      title: 'Empowering Tech Enthusiasts',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam quidem animi voluptatem voluptatibus magnam commodi enim quisquam. Fuga quia vel officiis sit tempora doloremque praesentium blanditiis natus dicta, cupiditate repellat odit, nobis architecto.',
+        'Algozenith is dedicated to enhancing the technical capabilities of tech enthusiasts, emphasizing data structures, algorithms, and competitive programming, thereby empowering individuals for success in the tech industry.',
     },
     {
-      title: 'Objective 3',
+      title: 'Community Building through Events',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nostrum dolore accusantium corrupti, doloremque totam impedit non aut molestiae explicabo obcaecati optio nemo assumenda dolor placeat ratione deleniti tempora error soluta exercitationem modi? Debitis delectus incidunt consequuntur id ipsam atque molestias! Perferendis, fugit?',
+        'Algozenith\'s primary mission is to organize events centered around data structures, algorithms, and competitive programming, aiming to foster a vibrant community of tech enthusiasts while promoting excellence in these crucial domains.',
     },
   ];
 
@@ -28,8 +28,8 @@ const ObjectiveComponent = () => {
           <div className="cards-container">
               {objectives.map((objective, index) => (
                 <div className="card" key={index}>
-                  <h2>{objective.title}</h2>
-                  <p>{objective.description}</p>
+                  <h2 style={{'fontSize':'1.4rem'}}>{objective.title}</h2>
+                  <p style={{'fontSize':'1.1rem'}}>{objective.description}</p>
                 </div>
               ))}
           </div>

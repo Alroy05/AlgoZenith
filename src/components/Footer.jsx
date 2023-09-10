@@ -22,7 +22,7 @@ export default function Footer() {
           <div className='socials-container'>
               <a href='https://www.instagram.com/algozenith_crce/'><FaInstagram className='social-icons'/></a> 
               <a href='https://www.linkedin.com/in/algozenith-crce/'><FaLinkedinIn className='social-icons'/></a>
-              <a href='/'><FaGithub className='social-icons'/></a>
+              <a href='https://github.com/Algozenith-CRCE'><FaGithub className='social-icons'/></a>
               <a href='mailto:crce.algozenith@gmail.com'><FaEnvelope className='social-icons'/></a>
           </div>
           <p>Phone: +91 72497 35828</p>

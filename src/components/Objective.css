@@ -46,7 +46,8 @@
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 25px;
+  padding: 0px 10px;
 }
 
 @media (max-width: 48em) {

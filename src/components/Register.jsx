@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Register.css'; 
 import Fade from 'react-reveal/Fade';
-import {app} from '../firebase';
-import { collection, addDoc, getDocs } from "firebase/firestore";
+// import {app} from '../firebase';
+import { collection, addDoc } from "firebase/firestore";
 import {db} from '../firebase';
-import { Link } from 'react-router-dom';
+
 
 
 function Register() {
@@ -27,7 +27,7 @@ function Register() {
     e.preventDefault();
     console.log(formData);
 
-        if(formData.name=='' || formData.email=='' || formData.phoneNumber=='' || formData.rollNumber=='' || formData.year=='' || formData.branch=='')
+        if(formData.name==='' || formData.email==='' || formData.phoneNumber==='' || formData.rollNumber==='' || formData.year==='' || formData.branch==='')
         {
           alert("Some fields are incomplete");
         }
