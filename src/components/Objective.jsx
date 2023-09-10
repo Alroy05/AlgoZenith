@@ -1,5 +1,6 @@
 import React from 'react';
 import './Objective.css';
+import Fade from 'react-reveal/Fade';
 
 const ObjectiveComponent = () => {
   const objectives = [
@@ -22,15 +23,17 @@ const ObjectiveComponent = () => {
 
   return (
     <div className="objective-container" id='objectives'>
-      <h1 className="events-title" style={{'fontSize':'2rem','paddingBottom':'5px','fontWeight':500}}>Objectives</h1>
-      <div className="cards-container">
-        {objectives.map((objective, index) => (
-          <div className="card" key={index}>
-            <h2>{objective.title}</h2>
-            <p>{objective.description}</p>
+        <h1 className="events-title" style={{'fontSize':'2rem','paddingBottom':'5px','fontWeight':500}}>Objectives</h1>
+        <Fade bottom>
+          <div className="cards-container">
+              {objectives.map((objective, index) => (
+                <div className="card" key={index}>
+                  <h2>{objective.title}</h2>
+                  <p>{objective.description}</p>
+                </div>
+              ))}
           </div>
-        ))}
-      </div>
+        </Fade>
     </div>
   );
 };

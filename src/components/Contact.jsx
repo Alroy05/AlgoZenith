@@ -22,8 +22,8 @@ function ContactForm() {
   };
 
   return (
-    <div className="contact-form-container">
-      <h2 className="center events-title">Contact Us</h2>
+    <div className="contact-form-container" id='contact'>
+      <h2 className="center events-title" style={{'fontWeight':'300'}}>Contact Us</h2>
       <div className="contact-details">
         <div className="contact-detail left">
           <span>Phone:</span>

@@ -2,11 +2,13 @@ import React from 'react'
 import './Home.css'
 import graphic from '../assets/code.png'
 import { Link } from 'react-scroll';
+import Fade from 'react-reveal/Fade';
 
 export default function Home() {
   return (
     <>
       <div className='wrap-container' id='home'>
+        <Fade bottom>
         <div className='content-container'>
         <span className='highlight'>
           <p><span className='highlighted'>AlgoZenith</span>,</p>
@@ -25,6 +27,7 @@ export default function Home() {
         <div className='image-container'>
           <img src={graphic} alt="coding graphic" className='coding-image'/>
         </div>
+        </Fade>
       </div>
     </>
   )

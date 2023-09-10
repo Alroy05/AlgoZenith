@@ -1,0 +1,146 @@
+.team-members-container {
+    background-color: #ddf1fff7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-members-title {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    font-weight: 500;
+    color: rgb(41, 83, 155);
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 75px;
+  }
+  
+  /* .card {
+    flex: 1;
+    min-width: calc(25% - 10px); 
+    width: calc(25% - 10px);
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    padding: 30px 5px;
+  }
+
+  .card-circle {
+    background-color: #ddf1fff7;
+    padding: 20px 0px;
+    width: 100%;
+    border-radius: 48%;
+  } */
+  
+  .card {
+    flex: 1;
+    min-width: calc(25% - 10px);
+    max-width: calc(25% - 10px); 
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    padding: 30px 5px;
+    transition: width 0.3s; /* Add a transition for width change */
+  }
+  
+  .card-circle {
+    background-color: white;
+    padding: 20px 0px;
+    border-radius: 48%;
+    box-shadow: 0px 80px 20px 15px #ddf1fff7 ;
+  }
+  /* rgba(119, 225, 251, 0.367) */
+  
+  .card .card-circle {
+    width: 100%; 
+  }
+  
+  .member-photo {
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+  }
+  
+  .member-photo img {
+    max-width: 100%; 
+    max-height: 100%; 
+    border-radius: 50%; 
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    color: rgb(22, 174, 255);
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 1200px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      min-width: 80%; 
+      width: 50vw; 
+    }
+  }
+
+  @media (max-width: 600px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      min-width: 80%; 
+      width: 40vw; 
+    }
+  }
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .icon {
+    color: #0077B5; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .icon.instagram-icon {
+    color: #e4405f;
+  }
+  
+  .icon.instagram-icon:hover {
+    color: rgb(22, 174, 255); 
+  }
+  .icon.linkedin-icon:hover {
+    color: rgb(22, 174, 255); 
+  }
+  
+  

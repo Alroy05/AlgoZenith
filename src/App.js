@@ -12,28 +12,37 @@ import {
 import Register from './components/Register';
 import NewEvents from './components/NewEvents';
 import BackBtn from './components/BackBtn';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollTop from './components/ScrollTop';
 import Contact from './components/Contact';
+import  ScrollToTop  from "react-scroll-to-top";
+import Teammember from "./components/Teammembers";
+import Fade from 'react-reveal/Fade';
 
 function App() {
   return (
     <Router>  
-      <ScrollToTop />
+      <ScrollToTop smooth class="scroll-to-top-button" color='navy'/>
+      <ScrollTop /> 
       <Navbar/>
       <Routes>
         <Route exact path='/' element={
           <>
-            <Home />
-            <Objective />
-            <Events />
-            <Contact />
+              <Home />
+            <Fade bottom>
+              <Objective />
+              <Events />
+              <Teammember />
+              <Contact />
+            </Fade>  
           </>
         }/>
         <Route exact path='/register' element={
           <>
             <BackBtn />
-            <NewEvents display='none' margin='100px'/>
-            <Register />
+            <Fade bottom>
+              <NewEvents display='none' margin='100px'/>
+              <Register />
+            </Fade>
           </>
         }/>
         
